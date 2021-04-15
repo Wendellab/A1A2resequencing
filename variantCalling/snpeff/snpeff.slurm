@@ -72,22 +72,6 @@ cat both.snpeff.cc.vcf | SnpSift filter "(Cases[0] = 0) & ((Controls[0] +  Contr
 cat both.snpeff.cc.vcf | SnpSift filter "(Controls[0] = 0) & ((Cases[0] +  Cases[1]) > 2)" | wc -l
 
 
-
-# Approximately 12M SNP sites for all A accessions (A1 and A2); of these, 
-# •	Individual samples are homozygous for reference (F1) allele at  5.6 – 7.9 M sites
-# •	Individual samples are homozygous for the derived allele at 1.6 – 2 M sites
-# •	Individual samples are heterozygous for the derived allele at 1.7 – 4.8 M sites
-# 
-# In this general background, we see
-# •	352,691 sites where the derived allele is fixed in A1 and absent in A2
-# 	o	4,042,689 sites where the derived allele is in at least 10% of the A1 population (het, or hom derived, 2 out of 21 samples), but absent in A2
-# •	99,261 sites where the derived allele is fixed in A2 and absent in A1
-# 	o	7,649,713 sites where the derived allele is in at least 10% of the A2 population (het, or hom derived, 10 out of 99 samples), but absent in A1
-# 
-
-
-
-
 # get each sample in an individual SNP vcf
 cat keep.A* | while read line; do vcftools --vcf ../all.samples.F1.SNPs.good.10pct.filtered.recode.vcf --out $line.SNP --indv $line --max-non-ref-af 0.99 --recode; done
 
