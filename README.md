@@ -6,6 +6,14 @@ Scripts used in analyzing diversity and divergence within and among _G. herbaceu
 
 **Overview of structure**
 
-[Library and trimming stats](./libraries.org)
+_introgression:_
 
-[RepeatExplorer](./analysis/RepeatExplorer/README.org)
+_nonsynonymousMutations:_ code required to run PAML and calculate the nonsynonymous mutation rates (ds) found in the manuscript
+
+_phylogeny:_ code and resulting tree files for the phylogenetic analyses
+
+_populationStructure:_ code for running STRUCTURE and LEA, and code for generating the output
+
+_repetitive:_ code for generating the input for RepeatExplorer, running the pipeline, and the output generated
+
+_variantCalling:_
