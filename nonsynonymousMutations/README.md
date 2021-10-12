@@ -1,7 +1,7 @@
 # A1A2resequencing
 Nonsynonymous mutation rate estimates for Dual domestication, diversity, and differential introgression in Old World cotton diploids 
 
-Agenome.trees: starting tree, for codeml
+**Agenome.trees**: starting tree, for codeml
 
 **codeml**: codeml v. 4.9j, compiled
 
