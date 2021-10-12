@@ -24,3 +24,11 @@ Nonsynonymous mutation rate estimates for Dual domestication, diversity, and dif
 **RedoLowFilter.slurm**: slurm file to capture any accession from the low filtered dataset that failed the first time
 
 **RedoMedFilter.slurm**: slurm file to capture any accession from the medium filtered dataset that failed the first time
+
+**Agenome.seqQuality.py**: filter alignments based on quality scores
+
+**reverseComplement.py**: reverse complement any genes on the (-) strand
+
+**concatenate2Fasta.py**: concatenate genes into 50 gene windows
+
+**Agenome.removeStopCodons.py**: : converts stop codons to NNN (for internal stops)
